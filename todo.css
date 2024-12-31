@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.nivi img {
+    height: 50px;
+    width: 50px;
+    border-radius: 7px;
+}
+
+.nivi h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#nv {
+    position: relative;
+    bottom: 30px;
+    color: black;
+
+}
+
+body {
+
+    background: linear-gradient(to right, rgb(37, 147, 249), #42c6bd, #37c227);
+}
+
+.container {
+    background: white;
+    width: 80%;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+}
+
+input {
+    flex: 1;
+    outline: none;
+    background: transparent;
+    border: 0;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: white;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    -webkit-user-select: none;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(checked.png);
+}
+
+span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+span:hover {
+    background: #edeef0;
+}
+
+@media only screen and (max-width: 600px) {
+    #nv {
+        position: relative;
+        bottom: 20px;
+        background: transparent;
+    }
+
+    .row {
+        position: relative;
+        right: 28px;
+
+    }
+
+    .row {
+        display: flex;
+    }
+
+    #btn {
+        position: relative;
+        right: 70px;
+        width: 30px;
+        text-align: center;
+    }
+
+    #list {
+        overflow: scroll;
+    }
+
+    span {
+        color: red;
+
+    }
+
+    #input {
+        color: black;
+
+    }
+
+    #nl {
+        position: relative;
+        top: 20px;
+    }
+
+    .nivi {
+        margin-bottom: 80px;
+        margin-top: -30px;
+    }
+
+}
